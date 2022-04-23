@@ -22,7 +22,12 @@ spring:
         id:
           new_generator_mappings: false
     show-sql: true
-    
+
+  # SWAGGER RESOLVE PROBLEMS
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
 # MYSQL DATABASE
 #spring:
 #  datasource:
