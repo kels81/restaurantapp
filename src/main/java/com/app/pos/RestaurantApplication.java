@@ -14,14 +14,14 @@ public class RestaurantApplication {
 		SpringApplication.run(RestaurantApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner run(ClienteRepository clienteRepository) {
-		return args -> {
-			clienteRepository.save(new Cliente(null, "Alfredo", "Luna Martínez", "Luna 29, Villas del Campo, Puebla", "5545892378"));
-			clienteRepository.save(new Cliente(null, "Lourdes Sofia", "Madero Tapia", "Violetas 68, Villas del Campo, Puebla", "5569781238"));
-			clienteRepository.save(new Cliente(null, "Maria", "Clemente Sánchez", "Hinojos 34, Villas del Campo, Puebla", "5578129645"));
-			clienteRepository.save(new Cliente(null, "Daniel", "Hernández Montero", "Bambu 1559, Villas del Campo, Puebla", "5554659543"));
-		};
-	}
+//	@Bean
+//	CommandLineRunner run(ClienteRepository clienteRepository) {
+//		return args -> {
+//			clienteRepository.save(new Cliente(null, "Alfredo", "Luna Martínez", "Luna 29, Villas del Campo, Puebla", "5545892378"));
+//			clienteRepository.save(new Cliente(null, "Lourdes Sofia", "Madero Tapia", "Violetas 68, Villas del Campo, Puebla", "5569781238"));
+//			clienteRepository.save(new Cliente(null, "Maria", "Clemente Sánchez", "Hinojos 34, Villas del Campo, Puebla", "5578129645"));
+//			clienteRepository.save(new Cliente(null, "Daniel", "Hernández Montero", "Bambu 1559, Villas del Campo, Puebla", "5554659543"));
+//		};
+//	}
 
 }
