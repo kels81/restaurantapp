@@ -19,7 +19,7 @@ public class MessageController {
 
     @GetMapping("/all")
     public ResponseEntity<String> getAll() {
-        String message = "Hola a todos";
+        String message = "Hola a todos desde el nuevo update";
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 }
